@@ -1,4 +1,4 @@
-h2.  TerraFormコマンド群
+# TerraFormコマンド群
 
 - terraform init
   -  resource作成に必要なバイナリファイルをダウンロードする。tfファイルを作成してから実行する。
