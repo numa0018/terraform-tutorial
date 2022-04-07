@@ -4,4 +4,9 @@ resource "aws_instance" "test_instance" {
   tags = {
     Name = "hoge_instance"
   }
+  user_data = <<EOF
+    #!/bin/bash
+    yum install -y httpd
+    systemctl start httpd.service
+EOF
 }
