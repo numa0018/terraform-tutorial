@@ -6,12 +6,12 @@ resource "aws_security_group" "security_group_for_ec2" {
     protocol = "tcp"
     cidr_blocks = ["0.0.0.0/0"]
   }
-  egress = [ {
+  egress {
     from_port = 0 
     to_port = 0
     protocol = "-1"
     cidr_blocks = [ "0.0.0.0/0" ]
-  } ]
+  }
 }
 
 resource "aws_instance" "test_instance" {
